@@ -53,7 +53,7 @@ def response(text):
 
 
 def wakeword(text):
-    wake=['hey','what','hello']
+    wake=['hey','what','how','hello']
     text=text.lower()
     for word in wake:
         if word in text:
@@ -99,7 +99,7 @@ while True:
             a1=[]
 
         #Multiplication
-        elif 'multiple' in text or 'into' in text or 'multiply' in text or 'multiplication' in text or 'times' in text:
+        elif 'multiple' in text or 'into' in text or 'multiply' in text or 'multiplication' in text or 'times' in text or 'x' in text:
             for i in text1:
                     if i.isdigit() or re.fullmatch(r"^[0-9]{1,}.[0-9]{1,}$",i):
                         a1.append(float(i))
